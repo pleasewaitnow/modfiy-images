@@ -74,6 +74,9 @@ Just need to connect your IDE to the current interpreter:
 
 And connect the vendor autoloder in IDE settings to unit test in settings > framework testing
 
+
+This was all powered by PHP, Laravel, Docker and Imagick.
+
 That is all. Bye.
 
 ## License
