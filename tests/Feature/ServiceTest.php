@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\ImageModificationService;
+use Controllers\ImageModificationService;
 use Illuminate\Http\UploadedFile;
 use Tests\TestCase;
 
