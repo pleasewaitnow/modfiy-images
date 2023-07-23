@@ -10,6 +10,8 @@ services:
             - ./:/var/www/html
         networks:
             - laravel_network
+        ports:
+            - "80:80" # Expose container port 80 to host port 80
 
 networks:
     laravel_network:

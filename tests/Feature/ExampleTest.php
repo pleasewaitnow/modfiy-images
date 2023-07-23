@@ -7,15 +7,10 @@ use Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
-    /**
-     * A basic test example.
-     *
-     * @return void
-     */
     public function test_example()
     {
-        $response = $this->get('/');
+        $endpoint = route('get.images.modify', ['file' => 'name.png']);
 
-        $response->assertStatus(200);
+        $this->get($endpoint)->assertStatus(200);
     }
 }
