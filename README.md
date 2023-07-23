@@ -6,6 +6,8 @@ Please, clone the project and open it. Next, you need to run docker.
 
 Either run it in IDE:
 
+<img src="tutorial/run.PNG" width="500">
+
 or run:
 
 ```
@@ -22,6 +24,7 @@ then open http://localhost
 
 you get the visual explanation on how to use the API:
 
+<img src="tutorial/laravel.PNG" width="500" />
 
 - There are 3 images provided to the API in the /public folder:
 
@@ -39,6 +42,14 @@ OR
 ?crop_height=X&crop_width=X
 ```
 
+So it would look like this:
+
+```
+http://localhost/xbox.png?crop_height=300&crop_width=500
+or
+http://localhost/planty.jpg?resize_height=300&resize_width=500
+```
+
 It automatically makes the file and redirects.
 
 
@@ -46,10 +57,17 @@ It automatically makes the file and redirects.
 
 the code is in the /Task folder.
 
+<img src="tutorial/task.PNG" width="500" />
+
+
 ## Where are the tests?
 
 the tests are in the /tests folder.
 
+<img src="tutorial/tests.PNG" width="500" />
+
+
+That is all. Bye.
 
 ## License
 
