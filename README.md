@@ -10,7 +10,7 @@ or run:
 
 ```
 docker-compose up -d
-
+```
 
 and then composer installation:
 
