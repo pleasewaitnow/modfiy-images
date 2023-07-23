@@ -76,13 +76,12 @@
 
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Example of crop parameters in  API: <br />
+                                    Example of <b>crop</b> parameters in  API: <br />
                                     <a href="http://localhost/planty.jpg?crop_height=300&crop_width=600">
                                         <img src="{{url('/images/planty.jpg')}}" width="200" />
                                     </a>
                                     <br />
-                                    Example of resize parameters in API: <br />
-                                    <br />
+                                    Example of <b>resize</b> parameters in API: <br />
                                     <a href="http://localhost/planty.jpg?resize_height=500&resize_width=200">
                                         <img src="{{url('/images/planty.jpg')}}" width="200" />
                                     </a>
