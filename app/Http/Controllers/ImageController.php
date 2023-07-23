@@ -9,9 +9,14 @@ class ImageController
     public function modify(Request $request, string $file, ImageModificationService $service)
     {
         $modifiers = $request->all();
+        $source = $service->getImagePath() . $file;
 
-        $service->modify($file, $modifiers);
+        if (empty($modifiers)) {
+            return response()->file($source);
+        }
 
-        return $file;
+        $generated = $service->modify($source, $modifiers);
+
+        return redirect()->route('get.images.modify', ['file' => $generated]);
     }
 }

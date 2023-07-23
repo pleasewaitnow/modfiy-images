@@ -58,12 +58,12 @@
                             <div class="ml-12">
                                 <div class="mt-12 text-gray-600 dark:text-gray-400 text-sm">
                                     Took the photos myself so hopefully there are no legal issues. <br />
-                                    <a href="http://localhost/happy">
+                                    <a href="http://localhost/happy.jpg">
                                         <img src="{{url('/images/happy.jpg')}}" width="200" />
                                     </a>
                                     .
-                                    <a href="http://localhost/xbox">
-                                        <img src="{{url('/images/xbox.jpg')}}" width="200" />
+                                    <a href="http://localhost/xbox.png">
+                                        <img src="{{url('/images/xbox.png')}}" width="200" />
                                     </a>
                                 </div>
                             </div>
@@ -77,14 +77,20 @@
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
                                     Example of crop parameters in  API: <br />
-                                    <a href="http://localhost/planty?crop_height=40&crop_width=60">
+                                    <a href="http://localhost/planty.jpg?crop_height=300&crop_width=600">
                                         <img src="{{url('/images/planty.jpg')}}" width="200" />
                                     </a>
                                     <br />
                                     Example of resize parameters in API: <br />
-                                    <a href="http://localhost/planty?resize_height=40&resize_width=60">
+                                    <br />
+                                    <a href="http://localhost/planty.jpg?resize_height=500&resize_width=200">
                                         <img src="{{url('/images/planty.jpg')}}" width="200" />
                                     </a>
+                                    <br />
+                                    this is going to send you to: <br />
+                                    http://localhost/planty.jpg?resize_height=500&resize_width=200 <br />
+                                    and then redirects automatically to the result. <br />
+                                    you can find all generated files in public folder. <br />
                                 </div>
                             </div>
                         </div>
