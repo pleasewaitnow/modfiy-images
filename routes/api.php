@@ -1,8 +1,7 @@
 <?php
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\ImageController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/{file}', function (Request $request) {
-    return 'hi guys';
-})->name('get.images.modify');
+Route::get('/{file}', [ImageController::class, 'modify'])
+    ->name('get.images.modify');

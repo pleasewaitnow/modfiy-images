@@ -12,11 +12,11 @@ class ImageModificationService
 
         // generate a new file
 
-        return '';
+        return $this->generateFileName();
     }
 
-    function generateRandomString($length = 10)
+    function generateFileName(string $prefix = 'generated-image'): string
     {
-        return substr(str_shuffle(str_repeat($x='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length/strlen($x)) )),1,$length);
+        return sprintf('%s-%s', $prefix, time());
     }
 }
