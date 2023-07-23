@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+    # PHP-FPM with Nginx container for running Laravel and PHPUnit
+    app:
+        build:
+            context: .
+            dockerfile: docker/Dockerfile.php-fpm-webserver
+        volumes:
+            - ./:/var/www/html
+        networks:
+            - laravel_network
+
+networks:
+    laravel_network:
+        driver: bridge
