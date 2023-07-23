@@ -67,6 +67,13 @@ the tests are in the /tests folder.
 <img src="tutorial/tests.PNG" width="500" />
 
 
+You can run the tests using the unit test already included in the container.
+Just need to connect your IDE to the current interpreter:
+
+<img src="tutorial/cli.PNG" width="500" />
+
+And connect the vendor autoloder in IDE settings to unit test in settings > framework testing
+
 That is all. Bye.
 
 ## License
